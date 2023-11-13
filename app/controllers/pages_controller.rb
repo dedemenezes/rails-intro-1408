@@ -1,4 +1,15 @@
 class PagesController < ApplicationController
+  # What is an action?
+  # A method defined within a Controller
+
+  # Instance Variable
+  # Allows you to share a variable in a controller action
+  # with the view of the same name!
+
+  # IMPORTANT!!
+  # The instance variable defined within an action
+  # IS NOT SHARED with the other actions
+
   def about
   end
 

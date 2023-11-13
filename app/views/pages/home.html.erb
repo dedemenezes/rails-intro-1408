@@ -2,9 +2,18 @@
 
 
 <p>Time now is: <%= Time.now %></p>
-
 <% Time.now %>
+
+
 <p><%= @school %></p>
+
+
+
+<%# ABOUT FORMS %>
+<%# Name of the parameters that arrive in the controller
+    comes from the name of a form's inputs %>
+<%# The form can make the request for another route
+    because it will work the same way :ok %>
 
 <form action="/" method="get">
   <input type="text" name="house" id="house" value="<%= params[:house] %>">
