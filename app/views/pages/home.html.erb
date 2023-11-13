@@ -1,0 +1,28 @@
+<h1>Welcome to Rails #1408</h1>
+
+
+<p>Time now is: <%= Time.now %></p>
+
+<% Time.now %>
+<p><%= @school %></p>
+
+<form action="/" method="get">
+  <input type="text" name="house" id="house" value="<%= params[:house] %>">
+  <input type="submit" value="Filter">
+</form>
+
+<p>This is the <strong>params</strong>: <%= params %></p>
+
+<ul>
+  <% @houses.each do |house| %>
+    <li><%= house %></li>
+  <% end %>
+</ul>
+
+<%# LINK %>
+
+<%# WE DONT USE A TAG %>
+<a href="/contact">Contacts</a>
+                          <%# prefix_path %>
+<%= link_to 'Talk to us', contact_path %>
+<%= link_to 'Know us', about_path %>
